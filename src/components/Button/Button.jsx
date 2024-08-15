@@ -1,6 +1,6 @@
-import getButtonStyling from "./getButtonstyling";
+import getButtonStyling from "./getButtonStyling";
 
-function Button({ buttonType = "button", text , onClickHandler = () => {}, styleType }) {
+function Button({ buttonType = "button", text, onClickHandler = () => {}, styleType = "default" }) {
     return (
         <button  
             type={buttonType}
