@@ -22,7 +22,7 @@ function TextInputForm({ handleChange, showText , value, handleFormSubmit, toggl
           text={showText ? "Hide" : "Show"}
           buttonType="button"
           onClickHandler={toggleShowText}
-          styleType="warning"
+          styleType={showText ?"error":"warning"}
         />
       </div>
     </form>

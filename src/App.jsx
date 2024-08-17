@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import PlayGame from "./pages/PlayGame/PlayGame";
 import StartGame from "./pages/StartGame/StartGame";
 
@@ -10,6 +10,7 @@ function App() {
     //   <TextInputFormContainer  onSubmit={(value)=>{console.log("form submitted with input " ,value   )}} />
     // </div>
     <Routes>
+     <Route path="/" element={<Navigate to="/start" />} />
       <Route path="/play" element={<PlayGame />} />
       <Route path="/start" element={<StartGame />} />
       <Route path="*" element={<h1>404 Not Found</h1>} />
